@@ -551,11 +551,11 @@ def main():
                 if 'LHOST' not in options:
                     print "Getting machine's IP address..."
                     lhost = get_ip()
-                elif 'LPORT' not in options:
+                elif 'LISTEN' not in options:
                     lhost = options['LHOST']
                 else:
                     lhost = options['LHOST']
-                    lport = options['LPORT']
+                    lport = options['LISTEN']
             except KeyError:
                 print "Change the listening web server port with the LISTEN option"
                 print "Change the listening web server IP with the LHOST option"
